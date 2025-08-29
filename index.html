@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Politique de confidentialité — PXCApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { max-width: 800px; margin: 2rem auto; font: 16px/1.5 system-ui, sans-serif; padding: 0 1rem; }
+    h1, h2 { line-height: 1.2; }
+    code { background:#f4f4f4; padding:0 .25rem; border-radius:4px; }
+  </style>
+</head>
+<body>
+<h1>Politique de confidentialité — PXCApp</h1>
+<p><em>Mise à jour : 29 août 2025</em></p>
+
+<h2>Résumé</h2>
+<p>PXCApp affiche un fichier JSON de contacts (Nom, Téléphone, Date de naissance), permet
+de <strong>sauvegarder des contacts</strong> sélectionnés dans l’app Contacts du téléphone et d’<strong>afficher des notifications d’anniversaire</strong>.
+Les données restent sur votre appareil. Le développeur ne collecte ni ne partage vos données.</p>
+
+<h2>Données traitées</h2>
+<ul>
+  <li><strong>Contacts du fichier JSON</strong> fourni par l’utilisateur (Nom, Téléphone, Date de naissance).</li>
+  <li><strong>Contacts présents sur l’appareil</strong> : lecture utilisée uniquement pour éviter les doublons avant création d’un nouveau contact.</li>
+</ul>
+
+<h2>Finalité</h2>
+<ul>
+  <li>Affichage de la liste des contacts et des prochains anniversaires.</li>
+  <li>Création de nouveaux contacts dans l’app Contacts (au choix de l’utilisateur).</li>
+  <li>Notifications le jour de l’anniversaire (si autorisées).</li>
+</ul>
+
+<h2>Stockage & transmission</h2>
+<ul>
+  <li>Les données sont <strong>traitées localement</strong> sur l’appareil et <strong>non transmises</strong> au développeur.</li>
+  <li>L’app télécharge le fichier JSON via <strong>HTTPS</strong> depuis l’URL que vous saisissez.</li>
+</ul>
+
+<h2>Partage</h2>
+<p>Aucun partage avec des tiers.</p>
+
+<h2>Permissions Android</h2>
+<ul>
+  <li><code>READ_CONTACTS</code> : vérifier les doublons dans vos contacts avant création.</li>
+  <li><code>WRITE_CONTACTS</code> : créer les contacts que vous avez sélectionnés.</li>
+  <li><code>POST_NOTIFICATIONS</code> (Android 13+) : afficher les rappels d’anniversaire.</li>
+</ul>
+
+<h2>Conservation & contrôle</h2>
+<ul>
+  <li>Les contacts créés restent dans votre app Contacts jusqu’à leur suppression par vous.</li>
+  <li>Vous pouvez retirer les autorisations Android à tout moment dans les Réglages du système.</li>
+</ul>
+
+<h2>Sécurité</h2>
+<p>La connexion au fichier JSON s’effectue via HTTPS. Aucune base de données distante n’est utilisée.</p>
+
+<h2>Contact</h2>
+<p>Pour toute question : <a href="mailto:yanndonnard@gmail.com">yanndonnard@gmail.com</a></p>
+</body>
+</html>
